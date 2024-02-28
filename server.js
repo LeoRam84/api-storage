@@ -16,7 +16,7 @@ server.use(
 );
 server.use(router);
 // Listen to port
-server.listen(3000, () => {
+server.listen(process.env.PORT || 3000, () => {
  console.log("JSON Server is running");
 });
 
